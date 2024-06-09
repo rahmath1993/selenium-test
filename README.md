@@ -1,4 +1,4 @@
-# Payment Point Automation Test
+# saucedemo
 
 ## Prerequisites
 This project requires the following dependencies:
@@ -14,45 +14,4 @@ This project requires the following dependencies:
 3. run test with this command
 
    ```bash
-   mvn verify
-   ```
-
-### Run with specific data provider file
-
-If you want to specify custom path for data provider file
-
-```bash
-mvn verify -Ddataprovider=<path to xlsx file>
-```
-
-for example:
-
-```bash
-mvn verify -Ddataprovider=payment-point-automation.xlsx
-```
-
-Run specify test you can use
-
-```bash
-mvn clean verify -Dit.test=CreatePaymentTest,CancelPaymentTest
-```
-
-Run specify namespace test you can use
-
-```bash
-mvn clean verify -Dit.test="id.co.algo.ppobtest.plnpostpaid.**"
-```
-
-Run specify namespace test with specify data provider you can use
-
-```bash
-mvn clean verify -Dit.test="id.co.algo.ppobtest.plnpostpaid.**" -Ddataprovider="src/test/resources/ppob-plnpostpaid-automation.xlsx"
-```
-
-#### Sample Report:
-
-![Specifications](docs/ss-1.png)
-
-![Test Results](docs/ss-2.png)
-
-![Scenario](docs/ss-3.png)
+   mvn clean verify
